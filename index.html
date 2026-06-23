@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBreak Games - Fun Games for Software Employees</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <span class="code-bracket">&lt;</span>
+                DevBreak Games
+                <span class="code-bracket">/&gt;</span>
+            </h1>
+            <p class="subtitle">Epic Games for Software Employees 🎮</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="games-grid">
+                <!-- Code Memory Game -->
+                <div class="game-card" data-game="memory">
+                    <div class="game-icon">🧠</div>
+                    <h3>Code Memory Challenge</h3>
+                    <p>Remember the sequence of programming languages and repeat it!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+
+                <!-- Bug Hunt Game -->
+                <div class="game-card" data-game="bughunt">
+                    <div class="game-icon">🐛</div>
+                    <h3>Bug Hunt</h3>
+                    <p>Find and fix the bugs in the code as fast as you can!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+
+                <!-- Code Typing Speed -->
+                <div class="game-card" data-game="typing">
+                    <div class="game-icon">⌨️</div>
+                    <h3>Code Typing Speed</h3>
+                    <p>Test your typing speed with real code snippets!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+
+                <!-- Algorithm Quiz -->
+                <div class="game-card" data-game="quiz">
+                    <div class="game-icon">🤔</div>
+                    <h3>Algorithm Quiz</h3>
+                    <p>Quick-fire questions about algorithms and data structures!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+
+                <!-- Stack Overflow Simulator -->
+                <div class="game-card" data-game="stackoverflow">
+                    <div class="game-icon">📚</div>
+                    <h3>Stack Overflow Simulator</h3>
+                    <p>Help fellow developers by answering their questions!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+
+                <!-- Code Golf -->
+                <div class="game-card" data-game="golf">
+                    <div class="game-icon">⛳</div>
+                    <h3>Code Golf</h3>
+                    <p>Write the shortest code possible to solve challenges!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Game Modals -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="gameContent"></div>
+        </div>
+    </div>
+
+    <!-- Score Display -->
+    <div id="scoreBoard" class="score-board">
+        <h3>🏆 Your Best Scores</h3>
+        <div id="scores"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DevBreak Games - Taking breaks has never been this fun! 
+                <span class="footer-emoji">{ happy: true }</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="games.js"></script>
+</body>
+</html> 
